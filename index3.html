@@ -1,0 +1,25 @@
+<!-- Write a JavaScript code to print all even numbers from 1 to a given number 'n' using a
+loop in JavaScript. (n = number inserted by user. Use prompt and typecasting) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problelm N0-3</title>
+</head>
+<body>
+    <script>
+        let n =parseInt(prompt("Enter a number:"));
+
+        console.log("The Even numbers from 1 to", n + ":");
+
+        for (let i = 1; i <= n; i++) {
+            if (i % 2 === 0) {
+                console.log(i);
+            }
+        }
+
+    </script>
+</body>
+</html>

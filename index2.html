@@ -1,0 +1,31 @@
+<!-- Write a JavaScript code that takes user input (use prompt and typecasting) and
+calculates the factorial of a number using a loop in JavaScript. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem No-2</title>
+</head>
+<body>
+    <script>
+            
+            let inputno = Number(prompt("Enter a number:"));
+
+            if (isNaN(inputno)) {
+            console.log("Invalid Input Number. Please enter a Right number.");
+            }
+             else {
+            let fact = 1;
+            for (let i = 1; i <= inputno; i++) {
+                fact=fact* i;
+            }
+
+          
+            console.log("The factorial of " + inputno + " is: " + fact);
+}
+
+    </script>
+</body>
+</html>

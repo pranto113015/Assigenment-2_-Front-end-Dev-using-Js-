@@ -1,0 +1,39 @@
+<!-- Write a JavaScript code that asks the user to insert his name and find the length of the
+name and how many small letters and capital letters are there. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem No-4</title>
+</head>
+<body>
+    <script>
+        
+            let name = prompt("Enter your name:");
+            let nameLength = name.length;
+
+        
+            let lowercaseCount = 0;
+            let uppercaseCount = 0;
+
+            for (let i = 0; i < nameLength; i++) {
+                let letter = name.charAt(i);
+                
+                if (letter >= 'a' && letter <= 'z') {
+                    lowercaseCount++;
+                } 
+                else if (letter >= 'A' && letter <= 'Z'){
+                    uppercaseCount++;
+                }
+            }
+
+            console.log("Enterd Name: " + name);
+            console.log("Length of the Name is: " + nameLength);
+            console.log("Total Lowercase letters: " + lowercaseCount);
+            console.log("Total Uppercase letters: " + uppercaseCount);
+
+    </script>
+</body>
+</html>

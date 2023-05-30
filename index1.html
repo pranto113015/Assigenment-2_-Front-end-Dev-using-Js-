@@ -1,0 +1,33 @@
+<!-- Write a JavaScript code that generates a multiplication table for the user inserted
+number (use prompt and typecasting) using a loop in JavaScript. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem No-1</title>
+</head>
+<body>
+    <script>
+               
+            let inputno = prompt("Enter a number:");
+
+            let num = parseInt(inputno);
+
+          
+            if (isNaN(num)) {
+            console.log("Input Number is Invalid, Please enter valid Number.");
+            } 
+            
+            else {
+            console.log("Multiplication Number is  " + num + ":");
+                for (let i = 1; i <= 10; i++) {
+                    let result = num * i;
+                    console.log(num + " x " + i + " = " + result);
+                }
+            }
+
+    </script>
+</body>
+</html>
